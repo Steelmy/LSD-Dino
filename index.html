@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LSD-Dino - Le Jeu Psychédélique Ultime</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Découvrez LSD-Dino, un jeu psychédélique unique mêlant action, couleurs et dinosaures dans une expérience visuelle inoubliable !">
+</head>
+<body>
+    <div class="container fade-in">
+        <div class="header">
+            <h1>🦕 LSD-Dino <span class="dino-icon">🦖</span></h1>
+            <p class="subtitle">L'Expérience Psychédélique Ultime</p>
+            <p class="description">
+                Plongez dans un univers coloré et déjanté où les dinosaures rencontrent l'art psychédélique ! 
+                Une aventure visuelle unique qui défie tous vos sens.
+            </p>
+        </div>
+
+        <div class="features">
+            <div class="feature-card fade-in">
+                <span class="emoji">🌈</span>
+                <h3>Effets Visuels Époustouflants</h3>
+                <p>Des animations psychédéliques et des dégradés colorés qui transforment chaque partie en voyage visuel.</p>
+            </div>
+            
+            <div class="feature-card fade-in">
+                <span class="emoji">🦕</span>
+                <h3>Dinosaures Déjantés</h3>
+                <p>Contrôlez des dinosaures uniques dans des environnements surréalistes et colorés.</p>
+            </div>
+            
+            <div class="feature-card fade-in">
+                <span class="emoji">🎮</span>
+                <h3>Gameplay Addictif</h3>
+                <p>Une mécanique de jeu simple mais captivante qui vous tiendra en haleine pendant des heures.</p>
+            </div>
+            
+            <div class="feature-card fade-in">
+                <span class="emoji">🎵</span>
+                <h3>Ambiance Immersive</h3>
+                <p>Une expérience sensorielle complète avec des effets sonores et visuels synchronisés.</p>
+            </div>
+            
+            <div class="feature-card fade-in">
+                <span class="emoji">🏆</span>
+                <h3>Système de Score</h3>
+                <p>Défiez vos amis et battez vos propres records dans cette aventure compétitive.</p>
+            </div>
+            
+            <div class="feature-card fade-in">
+                <span class="emoji">🎨</span>
+                <h3>Art Unique</h3>
+                <p>Un style artistique original qui mélange rétro et moderne dans une esthétique psychédélique.</p>
+            </div>
+        </div>
+
+        <div class="download-section">
+            <a href="Download/LSD-Dino.zip" download="LSD-Dino.zip" class="download-button">
+                <span class="download-icon">📥</span>
+                Télécharger LSD-Dino
+            </a>
+        </div>
+    </div>
+
+    <div class="container fade-in">
+        <div class="info-section">
+            <h2>🎯 À Propos du Jeu</h2>
+            <p>
+                LSD-Dino est né de la passion pour l'art psychédélique et les jeux rétro. 
+                Ce projet unique combine des éléments visuels hypnotiques avec une mécanique de jeu 
+                accessible à tous. Que vous soyez un joueur occasionnel ou un passionné, 
+                LSD-Dino vous offrira une expérience inoubliable qui stimulera vos sens et 
+                votre esprit de compétition.
+            </p>
+        </div>
+
+        <div class="info-section">
+            <h2>🚀 Comment Jouer</h2>
+            <p>
+                Le jeu est simple à prendre en main mais difficile à maîtriser ! 
+                Utilisez les contrôles intuitifs pour naviguer dans cet univers coloré, 
+                évitez les obstacles et collectez des points pour débloquer de nouveaux niveaux 
+                et des effets visuels encore plus spectaculaires.
+            </p>
+        </div>
+
+        <div class="info-section">
+            <h2>💻 Configuration Requise</h2>
+            <p>
+                LSD-Dino fonctionne sur la plupart des ordinateurs modernes. 
+                Aucune installation complexe n'est nécessaire - décompressez simplement 
+                l'archive et lancez le jeu ! Compatible avec Windows, Mac et Linux.
+            </p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>🦖 Créé avec passion pour les amateurs d'expériences visuelles uniques 🌈</p>
+        <p>© 2024 LSD-Dino - Tous droits réservés</p>
+    </div>
+
+    <script>
+        // Animation d'entrée progressive pour les éléments
+        document.addEventListener('DOMContentLoaded', function() {
+            const elements = document.querySelectorAll('.fade-in');
+            elements.forEach((element, index) => {
+                element.style.animationDelay = `${index * 0.2}s`;
+            });
+        });
+
+        // Effet de survol sur le titre principal
+        const title = document.querySelector('.header h1');
+        if (title) {
+            title.addEventListener('mouseenter', function() {
+                document.body.style.animation = 'gradientShift 0.3s ease infinite, psychedelicPulse 0.5s ease-in-out infinite';
+            });
+            
+            title.addEventListener('mouseleave', function() {
+                document.body.style.animation = 'gradientShift 2s ease infinite, psychedelicPulse 4s ease-in-out infinite';
+            });
+        }
+    </script>
+</body>
+</html>
